@@ -24,7 +24,7 @@ const createMarkup = images.map(image => {
       </li>`;
 }).join('');
     
-     gallery.innerHTML('beforeend', createMarkup);
+     gallery.insertAdjacentHTML('beforeend', createMarkup);
   lightbox.refresh();
 }
 

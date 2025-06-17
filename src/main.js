@@ -37,8 +37,8 @@ function handleSubmit(event) {
 
     
     getImagesByQuery(query)
-        .then(data => {
-            if (data.hits.length === 0) {
+        .then(res => {
+            if (res.data.hits.length === 0) {
                 iziToast.info({
                     message: 'Sorry, there are no images matching your search query. Please try again!',
                     position: 'topRight',
